@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="174dp"
+            android:layout_height="140dp"
+            android:layout_marginVertical="30dp"
+            android:src="@drawable/frame_40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Successful!" />
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_below="@+id/grp4"
+            android:textSize="14sp"
+            android:text="Please Wait a moment, we are preparing for you...." />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/primary"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

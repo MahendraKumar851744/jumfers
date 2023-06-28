@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="#FAF5F5"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selected"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tablercategory"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/iv"
+        android:layout_toEndOf="@+id/icon"
+        android:paddingVertical="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginVertical="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="New Paper Added"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="New subject in UPSC pre prepration test series"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

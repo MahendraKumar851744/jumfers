@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/iv"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/next"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="0dp"
+            >
+            <LinearLayout
+                android:id="@+id/ll_qn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selected"
+                android:backgroundTint="#E6E3E3"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/railway" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Assistant Station Master     (ASM)"
+                android:layout_marginHorizontal="5dp"
+                android:maxLines="2"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/iv_fav"
+        android:background="@drawable/circularshape"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            app:tint="@color/white"
+            android:src="@drawable/baseline_arrow_right_alt_24" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_fav"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/favourite" />
+
+
+</RelativeLayout>

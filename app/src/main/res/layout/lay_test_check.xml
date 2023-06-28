@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+
+                android:background="@drawable/bottomroundsheet2"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/railway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginVertical="20dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="40dp"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24"
+                        android:layout_height="28dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/raleway_bold"
+
+                        android:text="Answers &amp; Explanation"
+                        android:textColor="@color/white"
+
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_question_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="Question 2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_question"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Find the Missing Term in Multiples of 6 : 6, 12, 18, 24, _, 36, 42, _ 54, 60."
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/prev"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="false"
+                        android:gravity="center"
+                        android:background="@drawable/circularshape">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/arr_left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="false"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/circularshape_primary">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/arr_right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Selected Answer"
+                    android:textColor="#B2000000"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:background="@drawable/rounded_corner_primary"
+
+                    >
+                    <TextView
+                        android:id="@+id/option_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6F6F6F"
+                        android:textSize="18sp"
+                        android:text="a."
+                        android:fontFamily="@font/raleway_bold"
+                        android:background="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/option_text_sel"
+
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:background="@color/white"
+                        android:text="32, 45" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_check_circle_24"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Correct Answer"
+                    android:textColor="#B2000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:background="@color/primary"
+
+                    >
+                    <TextView
+                        android:id="@+id/option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="b."
+                        android:fontFamily="@font/raleway_bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/option_text"
+
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="30, 48" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:tint = "@color/white"
+                        android:src="@drawable/baseline_check_circle_24"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Explanation"
+                    android:layout_marginVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/lorem"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

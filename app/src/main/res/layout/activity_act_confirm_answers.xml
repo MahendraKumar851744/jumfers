@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Act_confirm_answers">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Confirm Answers"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginVertical="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:textColor="#888282"
+            android:textSize="14sp"
+            android:text="Paper Name" />
+
+        <TextView
+            android:id="@+id/paper_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="start"
+            android:text="Trigonometry Hieght &amp; Distance"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="16dp"
+            android:layout_marginVertical="10dp"
+            app:cardBackgroundColor="@color/primary"
+            android:layout_height="142dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mask_group"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="9/20"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/total_answered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="You answered 8 out of 10 questions"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:letterSpacing="0.04"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:layout_marginVertical="10dp"
+            android:text="Your Answers"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/next"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_confirm_answers"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#000000"
+            android:id="@+id/skip"
+            app:cardCornerRadius="35dp">
+
+            <LinearLayout
+                android:id="@+id/edit_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:gravity="center_horizontal"
+                    android:text="Edit Answer"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="#EB5D1E"
+            android:id="@+id/next"
+
+            app:cardCornerRadius="35dp">
+
+            <LinearLayout
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:gravity="center_horizontal"
+                    android:text="Submit ->"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

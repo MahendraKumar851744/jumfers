@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/iv"
+        android:layout_toRightOf="@+id/ll_qn"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If the length of the shadow of a tree is decreasing then the angle of elevation is Affairs"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_attempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="(a) increasing"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textColor="#AEAEAE"
+                android:textSize="14sp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_qn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selected"
+        android:backgroundTint="#E6E3E3"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_sno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

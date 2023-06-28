@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/iv"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginVertical="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_qpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/dummy_string"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+
+                />
+            <TextView
+                android:id="@+id/tv_papername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Paper 3,  Indian History"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#878787"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_qn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q. Which of the following is euqivalent to 0.56 according to decimal rule"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/status"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_status"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dummy_string"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dummy_string"
+                    android:textColor="#605F5F"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/dropup_arrow" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#DADADA"
+        android:layout_marginVertical="0dp"
+        android:layout_below="@+id/iv"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>
