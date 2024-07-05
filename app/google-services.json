@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "50889969616",
-    "project_id": "jumfers-a49bd",
-    "storage_bucket": "jumfers-a49bd.appspot.com"
+    "project_number": "923784109786",
+    "project_id": "jumfers-b1cdf",
+    "storage_bucket": "jumfers-b1cdf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:50889969616:android:a92f4d914fdbaa1ff973d5",
+        "mobilesdk_app_id": "1:923784109786:android:84113dd0d4d7ae41190fe3",
         "android_client_info": {
-          "package_name": "com.androidai.jumfers"
+          "package_name": "com.jumfers.mocktestseries"
         }
       },
       "oauth_client": [
         {
-          "client_id": "50889969616-d648gk0vblfjkv4oaso6gtevgh2tn1hl.apps.googleusercontent.com",
+          "client_id": "923784109786-al5e8mf7bbo42mm3nlke8nurpk3t21a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jumfers.mocktestseries",
+            "certificate_hash": "17b74ea63d282f026c33251caa3eb3657a6708cc"
+          }
+        },
+        {
+          "client_id": "923784109786-clsmoaatlss448u32qa3fc0onsrfatg3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDO-IBqF_Z5yai2xPLSBM6ABSubG2MUwU4"
+          "current_key": "AIzaSyCYT_DSBTnmQuiGDIuVese2A5kbpvhUrJs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "50889969616-d648gk0vblfjkv4oaso6gtevgh2tn1hl.apps.googleusercontent.com",
+              "client_id": "923784109786-clsmoaatlss448u32qa3fc0onsrfatg3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

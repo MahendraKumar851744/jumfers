@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     android:layout_height="wrap_content">
@@ -23,11 +24,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway_bold"
+                android:fontFamily="@font/raleway"
+                android:textStyle="bold"
                 android:gravity="center_horizontal"
                 android:text="@string/dummy_string"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
 
                 />
         </LinearLayout>
@@ -36,65 +38,104 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
-            android:fontFamily="@font/raleway_bold"
+            android:fontFamily="@font/roboto"
             android:gravity="center_horizontal"
             android:text="@string/dummy_string"
             android:layout_marginVertical="8dp"
             android:textColor="#5C5C5E"
             android:textSize="13sp"
+            android:textStyle="bold"
             />
 
-        <TextView
-            android:id="@+id/tv_text"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="5dp"
-            android:fontFamily="@font/raleway_bold"
-            android:gravity="start"
-            android:text="Lorem Ipsum is simplt bmg mg m   n  v fn y dummy text of the printing and typesetting industry. Lorem Ips"
-            android:textColor="#5C5C5E"
-            android:textSize="12sp"
-            />
         <LinearLayout
-            android:visibility="gone"
-
+            android:id="@+id/status"
             android:layout_width="match_parent"
-            android:layout_marginVertical="5dp"
-            android:layout_marginRight="20dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
             <TextView
+                android:id="@+id/tv_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway_bold"
-                android:gravity="center_horizontal"
-                android:text="Duration:"
-                android:layout_marginVertical="8dp"
-                android:textColor="#5C5C5E"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/raleway"
+                android:gravity="start"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ips"
+                android:textColor="#434343"
                 android:textSize="12sp"
+                android:textStyle="bold"
                 />
-            <TextView
-                android:id="@+id/tv_time"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:gravity="center_horizontal"
-                android:text="3 minute"
-                android:layout_marginVertical="8dp"
-                android:textColor="#5C5C5E"
-                android:textSize="13sp"
-                />
+                android:layout_marginVertical="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:text="Duration:"
+                        android:layout_marginVertical="8dp"
+                        android:textColor="#5C5C5E"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:text="0 minute"
+                        android:layout_marginVertical="8dp"
+                        android:textColor="#5C5C5E"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:text="Start the Test "
+                        android:layout_marginVertical="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        app:tint="@color/primary"
+                        android:src="@drawable/baseline_arrow_right_alt_24" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 
 
     <ImageView
         android:id="@+id/iv_arrow"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:layout_marginVertical="10dp"

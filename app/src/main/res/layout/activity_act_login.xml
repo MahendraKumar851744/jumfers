@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Act_login">
+    tools:context="com.jumfers.mocktestseries.Act_login">
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -74,6 +74,7 @@
             android:paddingHorizontal="40dp"
             android:layout_marginVertical="4dp"
             android:lineSpacingExtra="5dp"
+            android:layout_marginHorizontal="30dp"
             android:fontFamily="@font/roboto"
             android:gravity="center"
             android:text="Log in to your account to boost your knowledge, skills, &amp; confidence"
@@ -183,6 +184,7 @@
             android:orientation="horizontal"
             android:gravity="center">
             <androidx.cardview.widget.CardView
+                android:visibility="gone"
                 android:layout_width="60dp"
                 android:layout_marginHorizontal="10dp"
                 app:cardBackgroundColor="#F3F3F3"

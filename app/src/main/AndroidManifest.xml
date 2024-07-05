@@ -7,7 +7,6 @@
     <uses-permission
         android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
         tools:ignore="ProtectedPermissions" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,34 +17,40 @@
         android:theme="@style/Theme.Jumfers"
         tools:targetApi="31">
         <activity
-            android:name=".Act_NewPassword"
+            android:name="com.jumfers.mocktestseries.Adapters.Act_review"
             android:exported="false" />
         <activity
-            android:name=".Act_otp"
+            android:name="com.jumfers.mocktestseries.Adapters.Act_result"
             android:exported="false" />
         <activity
-            android:name=".Act_ForgotPassword"
+            android:name="com.jumfers.mocktestseries.Act_NewPassword"
             android:exported="false" />
         <activity
-            android:name=".Act_confirm_answers"
+            android:name="com.jumfers.mocktestseries.Act_otp"
             android:exported="false" />
         <activity
-            android:name=".Act_Walkthrough"
+            android:name="com.jumfers.mocktestseries.Act_ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.jumfers.mocktestseries.Act_confirm_answers"
+            android:exported="false" />
+        <activity
+            android:name="com.jumfers.mocktestseries.Act_Walkthrough"
             android:exported="true" />
         <activity
-            android:name=".Profile.Actvities.Act_Edit_Profile"
+            android:name="com.jumfers.mocktestseries.Profile.Actvities.Act_Edit_Profile"
             android:exported="false" />
         <activity
-            android:name=".Act_register"
+            android:name="com.jumfers.mocktestseries.Act_register"
             android:exported="false" />
         <activity
-            android:name=".Act_test"
+            android:name="com.jumfers.mocktestseries.Act_test"
             android:exported="false" />
         <activity
-            android:name=".Act_login"
+            android:name="com.jumfers.mocktestseries.Act_login"
             android:exported="false" />
         <activity
-            android:name=".Act_splash"
+            android:name="com.jumfers.mocktestseries.Act_splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,7 +59,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.jumfers.mocktestseries.MainActivity"
             android:exported="true" />
 
         <meta-data
@@ -62,7 +67,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <receiver
-            android:name=".NotificationReceiver"
+            android:name="com.jumfers.mocktestseries.NotificationReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.onesignal.NotificationOpened.ACTION" />
@@ -71,7 +76,7 @@
         </receiver>
 
         <service
-            android:name=".CustomNotificationListener"
+            android:name="com.jumfers.mocktestseries.CustomNotificationListener"
             android:exported="true"
             android:label="CustomNotificationListener"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">

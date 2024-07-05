@@ -7,88 +7,63 @@
 
     android:layout_height="match_parent">
 
-
-
-
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bottomroundsheet1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/railway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
                 android:layout_width="match_parent"
-                android:paddingVertical="20dp"
-                android:background="@drawable/bottomroundsheet1"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/railway"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:text="RRB NTPC"
+                android:layout_marginVertical="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                 />
 
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_height="wrap_content"
-
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="40dp"
-                        android:layout_marginVertical="10dp"
-                        android:fontFamily="@font/raleway_bold"
-                        android:letterSpacing="0.04"
-                        android:text="Full Length \nPapers"
-                        android:textColor="@color/white"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-            </LinearLayout>
-    <LinearLayout
-        android:layout_below="@+id/sheet"
-        android:id="@+id/search"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_margin="20dp"
-                android:orientation="horizontal"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:background="@drawable/rounded_corner"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:text="Full Length"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                    >
-                    <EditText
-                        android:inputType="text"
-                        android:id="@+id/email"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#575757"
+        </LinearLayout>
 
-                        android:textSize="16sp"
-                        android:fontFamily="@font/raleway_bold"
-                        android:background="@color/white"
-                        android:hint="Search Your Subject, Topic" />
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/baseline_search_24"
-                        />
-                </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
 
-            </LinearLayout>
+    </RelativeLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/search"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sheet"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="0dp">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -98,6 +73,7 @@
         android:layout_height="100dp"
         android:id="@+id/mask3"
         android:scaleType="fitXY"
+
         android:src="@drawable/markgrp5"
         android:layout_alignParentEnd="true" />
 

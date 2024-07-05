@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.jumfers.mocktestseries.MainActivity">
 
     <FrameLayout
         android:id="@+id/flFragment"
@@ -20,123 +20,38 @@
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        app:layout_constraintStart_toStartOf="parent">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#39000000"/>
+            android:background="#39000000" />
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
-            app:menu="@menu/bottom_navigation_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:itemTextColor="@color/black"
-            />
+            app:menu="@menu/bottom_navigation_menu" />
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
-
-<!--    <ImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:id="@+id/mask3"-->
-<!--        android:src="@drawable/mask3"-->
-<!--        android:layout_alignParentEnd="true" />-->
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:padding="20dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:fontFamily="@font/raleway_bold"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Hi, Mathew"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="28sp" />-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:padding="10dp"-->
-<!--            android:background="@drawable/rounded_corner"-->
-<!--            android:layout_marginVertical="20dp"-->
-<!--            >-->
-<!--            <EditText-->
-<!--                android:inputType="text"-->
-<!--                android:id="@+id/email"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textColor="#575757"-->
-
-<!--                android:textSize="16sp"-->
-<!--                android:fontFamily="@font/raleway_bold"-->
-<!--                android:background="@color/white"-->
-<!--                android:hint="Search Your Subject, Topic" />-->
-<!--            <ImageView-->
-<!--                android:layout_width="30dp"-->
-<!--                android:layout_height="30dp"-->
-<!--                android:src="@drawable/baseline_search_24"-->
-
-<!--                />-->
-<!--        </LinearLayout>-->
-<!--    </LinearLayout>-->
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        app:cardElevation="20dp">-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            app:cardElevation="10dp"-->
-<!--            android:orientation="vertical"-->
-<!--            android:outlineSpotShadowColor="@color/black"-->
-<!--            android:background="@drawable/newrounded_corne1r"-->
-<!--            android:layout_height="wrap_content">-->
+<!--        android:indeterminateTint="@color/primary"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        -->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.5" />-->
 
-
-
-<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--                android:id="@+id/bottom_navigation"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-
-<!--                app:itemTextColor="@color/black"-->
-<!--                app:menu="@menu/bottom_navigation_menu" />-->
-
-
-<!--        </LinearLayout>-->
-<!--    </androidx.cardview.widget.CardView>-->
-
-
-
-
-<!--</RelativeLayout>-->
-
-
-
-
+</androidx.constraintlayout.widget.ConstraintLayout>

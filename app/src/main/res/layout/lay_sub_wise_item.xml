@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     android:layout_height="wrap_content">
@@ -28,7 +29,7 @@
                 android:gravity="center_horizontal"
                 android:text="Current Affairs"
                 android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway_bold"
+                android:fontFamily="@font/raleway"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -48,11 +49,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Papers"
-                android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway"
-                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="12sp"
 
                 />
             <TextView
@@ -62,9 +61,9 @@
                 android:gravity="center_horizontal"
                 android:text="50"
                 android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway_bold"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/primary"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 />
 
@@ -74,10 +73,9 @@
                 android:gravity="center_horizontal"
                 android:text="Attempts Remaining"
                 android:layout_marginHorizontal="5dp"
-                android:fontFamily="@font/raleway"
-                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="12sp"
 
                 />
             <TextView
@@ -86,9 +84,9 @@
                 android:gravity="center_horizontal"
                 android:text="45/"
 
-                android:fontFamily="@font/raleway_bold"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 />
             <TextView
@@ -97,9 +95,9 @@
                 android:gravity="center_horizontal"
                 android:text="50"
 
-                android:fontFamily="@font/raleway_bold"
-                android:textColor="@color/primary"
-                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 />
         </LinearLayout>
@@ -112,13 +110,14 @@
         android:layout_margin="5dp"
         android:layout_centerInParent="true"
         android:layout_marginVertical="10dp"
-        android:background="@drawable/circular_border"
+        android:background="@drawable/circularshape"
         android:gravity="center">
 
         <ImageView
             android:layout_width="14dp"
             android:layout_height="14dp"
             android:layout_gravity="center"
+            app:tint="@color/white"
             android:src="@drawable/grp5" />
 
     </LinearLayout>

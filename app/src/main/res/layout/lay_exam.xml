@@ -13,117 +13,146 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <LinearLayout
+
+
+            <RelativeLayout
+                android:id="@+id/sheet"
                 android:layout_width="match_parent"
-                android:paddingVertical="20dp"
-                android:background="@drawable/bottomroundsheet"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content">
+                android:paddingVertical="10dp"
+                android:background="@drawable/bottomroundsheet"
+                android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/railway"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_height="wrap_content"
-                    android:paddingVertical="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:padding="5dp"
-                        android:src="@drawable/railway"/>
-                    <TextView
-                        android:id="@+id/title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Railway Exams"
-                        android:fontFamily="@font/raleway_bold"
-                        android:textColor="@color/black"
-                        android:textSize="25sp"
-                        android:layout_marginVertical="10dp"
-                        android:textStyle="bold"
-                        android:letterSpacing="0.04"/>
-
+                    android:layout_width="match_parent"
+                    android:paddingVertical="20dp"
+                    android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:id="@+id/railway"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+
+                        android:layout_marginHorizontal="5dp"
                         android:layout_height="wrap_content"
-                        android:weightSum="2">
+                        android:paddingVertical="5dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/raleway"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/primary"
+                            android:text="0 papers"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Railway Exams"
+                            android:fontFamily="@font/raleway_bold"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:layout_marginVertical="10dp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.04"/>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="end"
-
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:src="@drawable/page"
-                                />
-
-                            <TextView
-                                android:id="@+id/total_papers"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/raleway_bold"
-                                android:gravity="center_horizontal"
-                                android:textColor="@color/black"
-                                android:text="0 papers"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="10dp"
-                                android:src="@drawable/user"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:text="150 Students"
-                                android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/raleway_bold"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:textStyle="bold"
-                                />
+                                android:gravity="end"
+
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/page"
+                                    app:tint="#B6B6B6"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/total_papers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="#444444"
+                                    android:text="0 papers"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    app:tint="#B6B6B6"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/user"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="150 Students"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:textColor="#444444"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
                         </LinearLayout>
+
+
+
+
                     </LinearLayout>
-
-
-
-
                 </LinearLayout>
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+
+            </RelativeLayout>
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/full_paper"
                 android:layout_width="match_parent"
-                android:layout_marginVertical="10dp"
+                android:layout_marginVertical="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp">
+                app:cardElevation="1dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:padding="20dp"
                     android:weightSum="2">
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <LinearLayout
@@ -139,13 +168,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="start"
-
                                 android:paddingLeft="5dp"
-                                android:text="Full Length Paper"
-                                android:fontFamily="@font/raleway_bold"
+                                android:text="Full Length\nPaper"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:layout_marginHorizontal="5dp"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 />
                         </LinearLayout>
@@ -154,11 +182,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             >
-                            <ImageView
-                                android:layout_width="22dp"
-                                android:layout_height="22dp"
-                                android:src="@drawable/page"
-                                />
                             <TextView
                                 android:id="@+id/tv_full"
                                 android:layout_width="wrap_content"
@@ -166,7 +189,7 @@
                                 android:gravity="center_horizontal"
                                 android:text=""
                                 android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/raleway_bold"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -198,10 +221,10 @@
                     </LinearLayout>
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="112dp"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:src="@drawable/examsheets"
+                        android:src="@drawable/l"
                         />
                 </LinearLayout>
 
@@ -209,21 +232,21 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_marginVertical="10dp"
+                android:layout_marginVertical="0dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/sub_paper"
                 app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp">
+                app:cardElevation="1dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:padding="20dp"
                     android:weightSum="2">
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <LinearLayout
@@ -241,24 +264,18 @@
                                 android:gravity="start"
 
                                 android:paddingLeft="5dp"
-                                android:text="Subject Wise Paper"
-                                android:fontFamily="@font/raleway_bold"
+                                android:text="Subject Wise \nPaper"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:layout_marginHorizontal="5dp"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            >
-                            <ImageView
-                                android:layout_width="22dp"
-                                android:layout_height="22dp"
-                                android:src="@drawable/grp57"
-                                />
+                            android:layout_height="wrap_content">
                             <TextView
                                 android:id="@+id/tv_subject"
                                 android:layout_width="wrap_content"
@@ -266,7 +283,7 @@
                                 android:gravity="center_horizontal"
                                 android:text=""
                                 android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/raleway_bold"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -298,10 +315,10 @@
                     </LinearLayout>
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="112dp"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:src="@drawable/book"
+                        android:src="@drawable/frame_21"
                         />
                 </LinearLayout>
 
@@ -310,20 +327,20 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/topic_paper"
                 android:layout_width="match_parent"
-                android:layout_marginVertical="10dp"
+                android:layout_marginVertical="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp">
+                app:cardElevation="1dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:padding="20dp"
                     android:weightSum="2">
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <LinearLayout
@@ -341,11 +358,11 @@
                                 android:gravity="start"
 
                                 android:paddingLeft="5dp"
-                                android:text="Topic Wise Paper"
-                                android:fontFamily="@font/raleway_bold"
+                                android:text="Topic Wise\nPaper"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:layout_marginHorizontal="5dp"
-                                android:textSize="20sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 />
                         </LinearLayout>
@@ -354,11 +371,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             >
-                            <ImageView
-                                android:layout_width="22dp"
-                                android:layout_height="22dp"
-                                android:src="@drawable/grp81"
-                                />
                             <TextView
                                 android:id="@+id/tv_topic"
                                 android:layout_width="wrap_content"
@@ -366,7 +378,7 @@
                                 android:gravity="center_horizontal"
                                 android:text=""
                                 android:layout_marginHorizontal="10dp"
-                                android:fontFamily="@font/raleway_bold"
+                                android:fontFamily="@font/raleway"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -398,10 +410,10 @@
                     </LinearLayout>
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="112dp"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:src="@drawable/topic_wise"
+                        android:src="@drawable/frame_22"
                         />
                 </LinearLayout>
 
@@ -418,6 +430,7 @@
         android:layout_height="wrap_content"
         android:indeterminateTint="@color/primary"
         android:layout_centerInParent="true"
+        android:visibility="gone"
         android:id="@+id/progress_circular"/>
 
 

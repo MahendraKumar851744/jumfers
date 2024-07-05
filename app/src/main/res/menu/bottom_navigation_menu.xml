@@ -8,13 +8,13 @@
     <item
         android:id="@+id/notifications"
         android:enabled="true"
-        android:icon="@drawable/notifications"
-        android:title="Notification"/>
+        android:icon="@drawable/frame_46"
+        android:title="Notifications"/>
 
     <item
         android:id="@+id/history"
         android:enabled="true"
-        android:icon="@drawable/history"
+        android:icon="@drawable/frame_47"
         android:title="History"/>
 
     <item

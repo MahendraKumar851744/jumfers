@@ -2,19 +2,20 @@ plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
     id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+    id 'com.google.firebase.crashlytics'
 
 }
 
 android {
-    namespace 'com.androidai.jumfers'
-    compileSdk 33
+    namespace 'com.jumfers.mocktestseries'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.androidai.jumfers"
+        applicationId "com.jumfers.mocktestseries"
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -41,6 +42,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.5.0'
     implementation 'androidx.room:room-common:2.5.1'
     implementation 'androidx.room:room-runtime:2.5.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -52,4 +55,7 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.5.1'
     implementation 'com.github.GoodieBag:Pinview:v1.5'
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+
 }

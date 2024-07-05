@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Act_login">
+    tools:context="com.jumfers.mocktestseries.Act_login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,12 +36,12 @@
             android:paddingHorizontal="60dp"
             android:layout_marginVertical="4dp"
             android:lineSpacingExtra="5dp"
-            android:fontFamily="@font/raleway_bold"
+            android:fontFamily="@font/roboto"
             android:gravity="center"
             android:textStyle="bold"
             android:text="We’ve send the OTP verification code to your email address. Enter the code below"
             android:textColor="#434343"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,7 +83,8 @@
                 android:gravity="center"
                 android:text="Continue"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="16sp"
+                android:fontFamily="@font/raleway"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
 
@@ -102,11 +103,11 @@
                 android:layout_marginVertical="4dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/quicksand_bold"
+                android:fontFamily="@font/raleway"
                 android:gravity="center"
                 android:textColor="#888282"
                 android:layout_below="@+id/grp4"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:text="Back" />
         </LinearLayout>
 

@@ -31,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginVertical="20dp"
+                    android:layout_marginTop="0dp"
 
                     android:gravity="center"
                     android:orientation="horizontal"
@@ -41,16 +41,17 @@
                         android:id="@+id/iv_back"
                         android:layout_width="40dp"
                         android:src="@drawable/baseline_arrow_back_ios_new_24"
-                        android:layout_height="28dp" />
+                        android:layout_height="24dp" />
 
                     <TextView
+                        android:id="@+id/tv_title"
                         android:layout_width="match_parent"
                         android:gravity="center"
                         android:layout_height="wrap_content"
-
-                        android:fontFamily="@font/raleway_bold"
-
-                        android:text="Answers &amp; Explanation"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/raleway"
+                        android:letterSpacing="0.04"
+                        android:text="Mathematics"
                         android:textColor="@color/white"
 
                         android:textSize="24sp"
@@ -58,29 +59,31 @@
 
                 </RelativeLayout>
 
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/rv"-->
+                <!--                    android:layout_marginVertical="10dp"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="50dp" />-->
 
                 <TextView
                     android:id="@+id/tv_question_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/raleway"
+                    android:fontFamily="@font/roboto"
                     android:text="Question 2"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/tv_question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_question"
                     android:layout_marginVertical="10dp"
-                    android:fontFamily="@font/raleway_bold"
+                    android:fontFamily="@font/raleway"
                     android:text="Find the Missing Term in Multiples of 6 : 6, 12, 18, 24, _, 36, 42, _ 54, 60."
                     android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
+                    android:textSize="18sp" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,7 +100,6 @@
                     android:layout_height="wrap_content">
                     <LinearLayout
                         android:id="@+id/prev"
-
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginVertical="10dp"
@@ -124,9 +126,10 @@
                         android:layout_marginHorizontal="5dp"
                         android:background="@drawable/circularshape_primary">
                         <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_gravity="center"
+                            app:tint="@color/white"
                             android:src="@drawable/arr_right"/>
 
                     </LinearLayout>
@@ -138,7 +141,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/raleway_bold"
+                    android:fontFamily="@font/raleway"
+                    android:textStyle="bold"
                     android:text="Selected Answer"
                     android:textColor="#B2000000"
                     android:textSize="18sp" />
@@ -156,10 +160,10 @@
                         android:id="@+id/option_sel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#6F6F6F"
+                        android:textColor="#000000"
                         android:textSize="18sp"
                         android:text="a."
-                        android:fontFamily="@font/raleway_bold"
+                        android:fontFamily="@font/raleway"
                         android:background="@color/white"
                         />
 
@@ -171,8 +175,9 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:layout_marginLeft="10dp"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/raleway_bold"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/raleway"
+                        android:textStyle="bold"
                         android:background="@color/white"
                         android:text="32, 45" />
                     <ImageView
@@ -185,8 +190,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/raleway_bold"
                     android:text="Correct Answer"
+                    android:fontFamily="@font/raleway"
+                    android:textStyle="bold"
                     android:textColor="#B2000000"
                     android:textSize="18sp" />
 
@@ -208,7 +214,7 @@
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:text="b."
-                        android:fontFamily="@font/raleway_bold"
+                        android:fontFamily="@font/raleway"
 
                         />
 
@@ -221,7 +227,8 @@
                         android:textColor="@color/white"
                         android:layout_marginLeft="10dp"
                         android:textSize="20sp"
-                        android:fontFamily="@font/raleway_bold"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway"
                         android:text="30, 48" />
                     <ImageView
                         android:layout_width="30dp"
@@ -234,8 +241,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/raleway_bold"
+                    android:fontFamily="@font/raleway"
                     android:text="Explanation"
+                    android:textStyle="bold"
                     android:layout_marginVertical="10dp"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
@@ -248,7 +256,7 @@
                     android:text="@string/lorem"
                     android:textStyle="normal"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
 
             </LinearLayout>

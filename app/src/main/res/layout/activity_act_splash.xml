@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Act_splash">
+    tools:context="com.jumfers.mocktestseries.Act_splash">
 
     <ImageView
         android:id="@+id/imageView"
@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:indeterminateTint="#EB5D1E"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/imageView"
